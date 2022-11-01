@@ -8,6 +8,8 @@ How to
 4) :PackerCompile
 5) :PackerSync
 
-Check health of files 
-open nvim and type :checkhealth
-from there you can check everything that's not working properly
+Check health of files
+1) Open nvim
+2) :checkhealth
+
+From there you can check everything that's not working properly
