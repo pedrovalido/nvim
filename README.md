@@ -8,7 +8,7 @@ How to
 4) :PackerCompile
 5) :PackerSync
 
-Check health of files
+Check errors
 1) Open nvim
 2) :checkhealth
 
