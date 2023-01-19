@@ -20,8 +20,18 @@ keymap.set("n", "<leader>tx", ":tabclose<CR>") -- close current tab
 keymap.set("n", "<leader>tn", ":tabn<CR>") -- go to next tab
 keymap.set("n", "<leader>tp", ":tabp<CR>") -- go to previous tab
 
---plugin keymaps
+keymap.set("v", "J", " :m '>+1<CR>gv=gv") -- move selected line together
+keymap.set("v", "K", " :m '<-2<CR>gv=gv") -- move selected line together
 
+keymap.set("x", "<leader>p", '"_dP') -- paste on top selected word without copying deleted word : theprimeagen
+
+keymap.set("n", "<C-d>", "<C-d>zz") -- keep cursor in the middle of the page while moving down
+keymap.set("n", "<C-u>", "<C-u>zz") -- keep cursor in the middle of the page while moving up
+
+keymap.set("n", "n", "nzzzv") -- keep searched terms in the middle
+keymap.set("n", "N", "Nzzzv") -- keep searched terms in the middle
+
+--plugin keymaps
 
 --vim maximizer
 keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>")
@@ -35,4 +45,3 @@ keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>") -- find string in 
 keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>") -- find string under cursor in current working directory
 keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>") -- list open buffers in current neovim instance
 keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- list available help tags
-
