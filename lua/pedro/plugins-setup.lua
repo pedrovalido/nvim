@@ -117,6 +117,9 @@ return packer.startup(function(use)
 	-- git integration
 	use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
 
+	--github copilot
+	use("github/copilot.vim") -- uses OpenAI Codex to suggest code and entire functions in real-time
+
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then
