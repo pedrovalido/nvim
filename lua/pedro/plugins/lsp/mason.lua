@@ -26,12 +26,12 @@ mason_lspconfig.setup({
 		"html",
 		"cssls",
 		"tailwindcss",
-		"sumneko_lua", --lua
-    "bashls", --bash
-    "jsonls", --json 
-    "jedi_language_server", --python
-    "solang", --solidity (there are others)
-    "yamlls", --yaml
+		"lua_ls", --lua
+		"bashls", --bash
+		"jsonls", --json
+		"jedi_language_server", --python
+		"solang", --solidity (there are others)
+		"yamlls", --yaml
 	},
 	-- auto-install configured servers (with lspconfig)
 	-- automatic_installation = true, -- not the same as ensure_installed
