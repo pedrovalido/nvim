@@ -71,16 +71,22 @@ typescript.setup({
 })
 
 -- configure css server
-lspconfig["cssls"].setup({
-	capabilities = capabilities,
-	on_attach = on_attach,
-})
+-- lspconfig["cssls"].setup({
+-- 	capabilities = capabilities,
+-- 	on_attach = on_attach,
+-- })
 
 -- configure tailwindcss server
-lspconfig["tailwindcss"].setup({
-	capabilities = capabilities,
-	on_attach = on_attach,
-})
+-- lspconfig["tailwindcss"].setup({
+-- 	capabilities = capabilities,
+-- 	on_attach = on_attach,
+-- })
+
+--configure helm ls
+-- lspconfig["helm_ls"].setup({
+-- 	filetypes = { "helm" },
+-- 	cmd = { "helm_ls", "serve" },
+-- })
 
 -- configure lua server (with special settings)
 lspconfig["lua_ls"].setup({
