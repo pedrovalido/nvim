@@ -20,7 +20,7 @@ opt.smartcase = true
 --cursor line
 opt.cursorline = true
 
--- appearance 
+-- appearance
 opt.termguicolors = true
 opt.background = "dark"
 opt.signcolumn = "yes"
