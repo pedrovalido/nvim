@@ -31,7 +31,7 @@ mason_lspconfig.setup({
 		"jsonls", --json
 		"jedi_language_server", --python
 		"solang", --solidity (there are others)
-		"yamlls", --yaml
+		-- "yamlls", --yaml
 	},
 	-- auto-install configured servers (with lspconfig)
 	-- automatic_installation = true, -- not the same as ensure_installed
