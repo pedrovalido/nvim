@@ -36,7 +36,7 @@ require("nvim-web-devicons").setup({
 		["sol"] = {
 			icon = "󰡪",
 			color = "#607D8B", -- blue greyish color
-			name = "Log",
+			name = "Solidity",
 		},
 	},
 })
