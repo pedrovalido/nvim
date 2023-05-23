@@ -44,6 +44,8 @@ return packer.startup(function(use)
 	--Colorscheme
 	use("bluz71/vim-nightfly-guicolors") --preferred coloscheme
 	use({ "ellisonleao/gruvbox.nvim" })
+	-- Install without configuration
+	use({ "projekt0n/github-nvim-theme" })
 
 	use("christoomey/vim-tmux-navigator") --tmux && split window navigation
 
