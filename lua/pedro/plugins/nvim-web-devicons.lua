@@ -2,14 +2,14 @@ require("nvim-web-devicons").setup({
 	-- your personnal icons can go here (to override)
 	-- you can specify color or cterm_color instead of specifying both of them
 	-- DevIcon will be appended to `name`
-	-- override = {
-	-- 	sol = {
-	-- 		icon = "󰡪",
-	-- 		color = "#607D8B", -- blue greyish color
-	-- cterm_color = "65",
-	-- 		name = "Solidity",
-	-- 	},
-	-- },
+	override = {
+		sol = {
+			icon = "󰡪",
+			color = "#607D8B", -- blue greyish color
+			cterm_color = "65",
+			name = "Solidity",
+		},
+	},
 	-- globally enable different highlight colors per icon (default to true)
 	-- if set to false all icons will have the default icon's color
 	color_icons = true,
