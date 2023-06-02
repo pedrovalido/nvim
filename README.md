@@ -11,5 +11,3 @@ How to
 Check errors
 1) Open nvim
 2) :checkhealth
-
-From there you can check everything that's not working properly
