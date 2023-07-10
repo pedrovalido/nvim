@@ -48,7 +48,7 @@ require("lazy").setup({
 	--status line
 	{
 		"nvim-lualine/lualine.nvim",
-		dependencies = { "kyazdani42/nvim-web-devicons", opt = true },
+		dependencies = { "kyazdani42/nvim-web-devicons" },
 	},
 
 	-- use({"vim-airline/vim-airline-themes"})
@@ -61,8 +61,7 @@ require("lazy").setup({
 	{ "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
 	{ "nvim-telescope/telescope.nvim", branch = "0.1.x" },
 
-  
-  "NvChad/nvterm",
+	"NvChad/nvterm",
 
 	-- autocompletion
 	"hrsh7th/nvim-cmp", -- completion plugin
