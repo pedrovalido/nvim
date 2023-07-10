@@ -18,6 +18,7 @@ require("pedro.plugins.autopairs")
 require("pedro.plugins.treesitter")
 require("pedro.plugins.gitsigns")
 require("pedro.plugins.copilot")
+require("pedro.plugins.nvterm")
 
 -- plugin configs lsp
 require("pedro.plugins.lsp.mason")
