@@ -1,4 +1,6 @@
-vim.g.mapleader = " "
+-- vim.g.mapleader = " "
+-- using lazy -> leader key has to be defined right after lazy is initialized
+-- check plugins-setup.lua for the leader key definition
 
 local keymap = vim.keymap -- for conciseness
 
