@@ -6,7 +6,7 @@ How to
 
 1. Put this repo in ~/.config/nvim
 2. open nvim
-3. :source ~/.config/nvim/init.lua
+3. :Lazy
 
 Check errors
 
