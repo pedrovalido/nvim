@@ -25,28 +25,26 @@ Feel free to use this as a starting point for your configuration or as an inspir
 <details>
   <summary><h1>🔨Installation</h1></summary>
 
-    Please follow these steps to install and setup this NeoVim configuration:
+Please follow these steps to install and setup this NeoVim configuration:
 
-    Prerequisites: Ensure you have NeoVim installed on your system. If not, you can follow this [guide](https://github.com/neovim/neovim/wiki/Installing-Neovim) to install it.
+Prerequisites: Ensure you have NeoVim installed on your system. If not, you can follow this [guide](https://github.com/neovim/neovim/wiki/Installing-Neovim) to install it.
 
-    Clone the repository: Clone this repository to your local machine using the following command in your terminal:
-    for Unix-based systems
+Clone the repository: Clone this repository to your local machine using the following command in your terminal:
+for Unix-based systems
+```bash
+git clone https://github.com/pedrovalido/nvim ~/.config/nvim
+```
 
-    <code>
-    git clone https://github.com/pedrovalido/nvim ~/.config/nvim
-    </code>
+for Windows systems
+```bash
+git clone https://github.com/pedrovalido/nvim ~/AppData/Local/nvim/
+```
 
-    for Windows systems
+Install Lazy.nvim (the plugin manager): This configuration uses the Lazy.nvim plugin manager.
+If you don't have it installed, the configuration will automatically install it for you on the first run.
+If you wish to install it manually, follow the instructions in the [Lazy.nvim repository](https://github.com/folke/lazy.nvim).
 
-    ```bash
-    git clone https://github.com/pedrovalido/nvim ~/AppData/Local/nvim/
-    ```
-
-    Install Lazy.nvim (the plugin manager): This configuration uses the Lazy.nvim plugin manager.
-    If you don't have it installed, the configuration will automatically install it for you on the first run.
-    If you wish to install it manually, follow the instructions in the [Lazy.nvim repository](https://github.com/folke/lazy.nvim).
-
-    Install plugins: Start NeoVim, the plugins specified in the configuration will be automatically installed by Lazy.nvim.
+Install plugins: Start NeoVim, the plugins specified in the configuration will be automatically installed by Lazy.nvim.
 
 </details>
 
