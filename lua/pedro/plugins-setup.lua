@@ -61,7 +61,7 @@ require("lazy").setup({
 	{ "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
 	{ "nvim-telescope/telescope.nvim", branch = "0.1.x" },
 
-	"NvChad/nvterm",
+	-- "NvChad/nvterm", -- terminal (replaced with lsp saga terminal for now)
 
 	-- autocompletion
 	"hrsh7th/nvim-cmp", -- completion plugin
@@ -94,9 +94,10 @@ require("lazy").setup({
 	-- treesitter configuration
 	{
 		"nvim-treesitter/nvim-treesitter",
-		build = function()
-			require("nvim-treesitter.install").update({ with_sync = true })
-		end,
+		-- build = function()
+		-- 	require("nvim-treesitter.install").update({ with_sync = true })
+		-- end,
+		build = ":TSUpdate",
 		dependencies = "windwp/nvim-ts-autotag", -- autoclose parens, brackets, quotes, etc...
 	},
 	-- auto closing
