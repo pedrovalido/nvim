@@ -51,7 +51,7 @@ Install plugins: Start NeoVim, the plugins specified in the configuration will b
 <details>
   <summary><h1>🔌Plugins</h1></summary>
 
-1. **Utility Plugins**: **`nvim-lua/plenary.nvim`** (provides utility functions for NeoVim development and configuration).
+1. **Utility Plugins**: [**`nvim-lua/plenary.nvim`**](https://github.com/nvim-lua/plenary.nvim) (provides utility functions for NeoVim development and configuration).
 2. **Themes & Colors**: **`bluz71/vim-nightfly-guicolors`**, **`ellisonleao/gruvbox.nvim`**, **`projekt0n/github-nvim-theme`** (color scheme plugins).
 3. **Navigation**: **`christoomey/vim-tmux-navigator`** (enables navigation between tmux panels and Vim windows), **`szw/vim-maximizer`** (maximizes/restores Vim window), **`nvim-tree/nvim-tree.lua`** (file explorer).
 4. **Code Manipulation**: **`tpope/vim-surround`**, **`vim-scripts/ReplaceWithRegister`** (change, delete, add surroundings), **`numToStr/Comment.nvim`** (comment/uncomment lines).
