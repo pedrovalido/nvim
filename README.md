@@ -68,25 +68,25 @@ Install plugins: Start NeoVim, the plugins specified in the configuration will b
     
 The configuration files for the plugins and the core settings are organized as follows:
     
-  - **`init.lua`**: Entry point for all plugins and configurations.
+  - [init.lua](https://github.com/pedrovalido/nvim/blob/main/init.lua): Entry point for all plugins and configurations.
 - **Core Settings**:
-  - **`lua/pedro/core/colorscheme.lua`**: Defines the colorscheme for NeoVim.
-  - **`lua/pedro/core/keymaps.lua`**: Specifies keymaps for general operations and plugins.
-  - **`lua/pedro/core/options.lua`**: Configures various editor options, including line numbers, indentation, search settings, cursor line, appearance, backspace behavior, clipboard settings, and split windows behavior.
+  - [lua/pedro/core/colorscheme.lua](https://github.com/pedrovalido/nvim/blob/main/lua/pedro/core/colorscheme.lua): Defines the colorscheme for NeoVim.
+  - [lua/pedro/core/keymaps.lua](https://github.com/pedrovalido/nvim/blob/main/lua/pedro/core/keymaps.lua): Specifies keymaps for general operations and plugins.
+  - [lua/pedro/core/options.lua](https://github.com/pedrovalido/nvim/blob/main/lua/pedro/core/options.lua): Configures various editor options, including line numbers, indentation, search settings, cursor line, appearance, backspace behavior, clipboard settings, and split windows behavior.
 - **Plugin Configuration Files**:
-  - **`lua/pedro/plugins/lualine.lua`**: Configures lualine for status line customization.
-  - **`lua/pedro/plugins/nvim-cmp.lua`**: Configures nvim-cmp for auto-completion and integrates luasnip for snippets and lspkind for language-specific icons.
-  - **`lua/pedro/plugins/nvim-tree.lua`**: Sets up and customizes nvim-tree for file navigation.
-  - **`lua/pedro/plugins/nvim-web-devicons.lua`**: Sets up and customizes nvim-web-devicons for sidebar file icons.
-  - **`lua/pedro/plugins/telescope.lua`**: Configures the Telescope plugin for fuzzy finding and picker navigation.
-  - **`lua/pedro/plugins/treesitter.lua`**: Sets up nvim-treesitter for syntax highlighting and specifies parser languages.
-  - **`lua/pedro/plugins/autopairs.lua`**: Sets up nvim-autopairs to automatically pair characters like brackets.
-  - **`lua/pedro/plugins/comment.lua`**: Sets up the Comment plugin for easy commenting/uncommenting of code lines.
-  - **`lua/pedro/plugins/copilot.lua`**: Configures the copilot.vim plugin for AI-powered code suggestions.
-  - **`lua/pedro/plugins/gitsigns.lua`**: Configures the gitsigns.nvim plugin, which shows Git diff markers.
+  - [lua/pedro/plugins/lualine.lua](https://github.com/pedrovalido/nvim/blob/main/lua/pedro/plugins/lualine.lua): Configures lualine for status line customization.
+  - [lua/pedro/plugins/nvim-cmp.lua](https://github.com/pedrovalido/nvim/blob/main/lua/pedro/plugins/nvim-cmp.lua): Configures nvim-cmp for auto-completion and integrates luasnip for snippets and lspkind for language-specific icons.
+  - [lua/pedro/plugins/nvim-tree.lua](https://github.com/pedrovalido/nvim/blob/main/lua/pedro/plugins/nvim-tree.lua): Sets up and customizes nvim-tree for file navigation.
+  - [lua/pedro/plugins/nvim-web-devicons.lua](https://github.com/pedrovalido/nvim/blob/main/lua/pedro/plugins/nvim-web-devicons.lua): Sets up and customizes nvim-web-devicons for sidebar file icons.
+  - [lua/pedro/plugins/telescope.lua](https://github.com/pedrovalido/nvim/blob/main/lua/pedro/plugins/telescope.lua): Configures the Telescope plugin for fuzzy finding and picker navigation.
+  - [lua/pedro/plugins/treesitter.lua](https://github.com/pedrovalido/nvim/blob/main/lua/pedro/plugins/treesitter.lua): Sets up nvim-treesitter for syntax highlighting and specifies parser languages.
+  - [lua/pedro/plugins/autopairs.lua](https://github.com/pedrovalido/nvim/blob/main/lua/pedro/plugins/autopairs.lua): Sets up nvim-autopairs to automatically pair characters like brackets.
+  - [lua/pedro/plugins/comment.lua](https://github.com/pedrovalido/nvim/blob/main/lua/pedro/plugins/comment.lua): Sets up the Comment plugin for easy commenting/uncommenting of code lines.
+  - [lua/pedro/plugins/copilot.lua](https://github.com/pedrovalido/nvim/blob/main/lua/pedro/plugins/copilot.lua): Configures the copilot.vim plugin for AI-powered code suggestions.
+  - [lua/pedro/plugins/gitsigns.lua](https://github.com/pedrovalido/nvim/blob/main/lua/pedro/plugins/gitsigns.lua): Configures the gitsigns.nvim plugin, which shows Git diff markers.
 - **Language Server Protocol (LSP) Configuration Files**:
-  - **`lua/pedro/plugins/lsp/lspconfig.lua`**: Configures the lspconfig plugin for LSP support and the cmp-nvim-lsp for autocompletion. It also specifies LSP servers for specific languages.
-  - **`lua/pedro/plugins/lsp/lspsaga.lua`**: Configures the lspsaga plugin for a UI for LSP interactions.
-  - **`lua/pedro/plugins/lsp/mason.lua`**: Configures the mason plugin for managing language servers and linters. It also configures mason-lspconfig and mason-null-ls for interaction with lspconfig and null-ls respectively.
+  - [lua/pedro/plugins/lsp/lspconfig.lua](https://github.com/pedrovalido/nvim/blob/main/lua/pedro/plugins/lsp/lspconfig.lua): Configures the lspconfig plugin for LSP support and the cmp-nvim-lsp for autocompletion. It also specifies LSP servers for specific languages.
+  - [lua/pedro/plugins/lsp/lspsaga.lua](https://github.com/pedrovalido/nvim/blob/main/lua/pedro/plugins/lsp/lspsaga.lua): Configures the lspsaga plugin for a UI for LSP interactions.
+  - [lua/pedro/plugins/lsp/mason.lua](https://github.com/pedrovalido/nvim/blob/main/lua/pedro/plugins/lsp/mason.lua): Configures the mason plugin for managing language servers and linters. It also configures mason-lspconfig and mason-null-ls for interaction with lspconfig and null-ls respectively.
 
 </details>
