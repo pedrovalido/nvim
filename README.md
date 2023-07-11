@@ -55,7 +55,7 @@ Feel free to use this as a starting point for your configuration or as an inspir
 <details>
 
 
-### **Plugins**
+# Plugins
 
 <details>
   <summary>See more</summary>
@@ -71,7 +71,7 @@ Feel free to use this as a starting point for your configuration or as an inspir
     9. **AI-powered Code Suggestions**: **`github/copilot.vim`** (integration with GitHub's Copilot service).
     
 <details>
-    
+
 ## **Directory Structure & Configuration Files**
 
 <details>
