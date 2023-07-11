@@ -47,27 +47,39 @@ If you wish to install it manually, follow the instructions in the [Lazy.nvim re
 
 Install plugins: Start NeoVim, the plugins specified in the configuration will be automatically installed by Lazy.nvim.
 
-# Detailed Plugin Documentation
+### **Plugins**
 
-Here are the details of the plugins used in this NeoVim configuration:
+1. **Utility Plugins**: **`nvim-lua/plenary.nvim`** (provides utility functions for NeoVim development and configuration).
+2. **Themes & Colors**: **`bluz71/vim-nightfly-guicolors`**, **`ellisonleao/gruvbox.nvim`**, **`projekt0n/github-nvim-theme`** (color scheme plugins).
+3. **Navigation**: **`christoomey/vim-tmux-navigator`** (enables navigation between tmux panels and Vim windows), **`szw/vim-maximizer`** (maximizes/restores Vim window), **`nvim-tree/nvim-tree.lua`** (file explorer).
+4. **Code Manipulation**: **`tpope/vim-surround`**, **`vim-scripts/ReplaceWithRegister`** (change, delete, add surroundings), **`numToStr/Comment.nvim`** (comment/uncomment lines).
+5. **UI Enhancements**: **`kyazdani42/nvim-web-devicons`** (icons for file types), **`nvim-lualine/lualine.nvim`** (customizable status line), **`glepnir/lspsaga.nvim`** (LSP UI improvements), **`windwp/nvim-autopairs`** (automatic pairing of characters), **`lewis6991/gitsigns.nvim`** (Git decorations in sign column).
+6. **Search**: **`nvim-telescope/telescope.nvim`** (extensible fuzzy finder).
+7. **Autocompletion**: **`hrsh7th/nvim-cmp`** (contextual suggestions), **`L3MON4D3/LuaSnip`**, **`rafamadriz/friendly-snippets`** (code snippets), **`williamboman/mason.nvim`**, **`neovim/nvim-lspconfig`** (LSP support for autocompletion, syntax checking), **`jose-elias-alvarez/null-ls.nvim`** (use any program as a language server).
+8. **Syntax**: **`nvim-treesitter/nvim-treesitter`** (syntax highlighting and indentation based on Tree-sitter).
+9. **AI-powered Code Suggestions**: **`github/copilot.vim`** (integration with GitHub's Copilot service).
 
-- **`nvim-lua/plenary.nvim`**: A plugin that provides utility functions and classes which can be useful in developing other plugins or configuring NeoVim.
-- **`bluz71/vim-nightfly-guicolors`** & **`ellisonleao/gruvbox.nvim`**: These plugins set the color scheme of your NeoVim editor.
-- **`projekt0n/github-nvim-theme`**: This is a color scheme that mirrors the default color theme of GitHub.
-- **`christoomey/vim-tmux-navigator`**: This plugin enables seamless navigation between tmux panels and vim split windows.
-- **`szw/vim-maximizer`**: Maximizer provides a command to maximize and restore the current window in Vim.
-- **`tpope/vim-surround`** & **`vim-scripts/ReplaceWithRegister`**: These plugins provide functionality to change, delete, and add 'surroundings' like parentheses, brackets, quotes, XML tags, etc. The latter allows you to replace a certain text with copied content.
-- **`numToStr/Comment.nvim`**: This plugin allows you to easily comment and uncomment lines of code using the **`gcc`** command.
-- **`nvim-tree/nvim-tree.lua`**: A file explorer plugin that provides an easy way to navigate between different files and directories.
-- **`kyazdani42/nvim-web-devicons`**: This plugin provides icons for different file types, which can be displayed in the status line or the file explorer.
-- **`nvim-lualine/lualine.nvim`**: This plugin provides a customizable status line.
-- **`nvim-telescope/telescope.nvim`**: A highly extensible fuzzy finder over lists that integrates with many other plugins and provides a smooth workflow for finding and replacing text, files, and much more.
-- **`hrsh7th/nvim-cmp`**: A powerful autocompletion plugin that integrates with other plugins to provide contextual suggestions while you're typing.
-- **`L3MON4D3/LuaSnip`** & **`rafamadriz/friendly-snippets`**: These plugins provide support for code snippets, which are templates of commonly-used code that you can insert into your file.
-- **`williamboman/mason.nvim`** & **`neovim/nvim-lspconfig`**: These plugins provide Language Server Protocol (LSP) support, making it easier to get features like autocompletion, go to definition, and syntax checking for your programming language of choice.
-- **`glepnir/lspsaga.nvim`**: An enhancement of the built-in LSP, providing many UI improvements.
-- **`jose-elias-alvarez/null-ls.nvim`**: This plugin allows NeoVim to use any program as a language server, allowing for things like formatting and linting.
-- **`nvim-treesitter/nvim-treesitter`**: This plugin provides syntax highlighting, indentation, and more, based on the Tree-sitter parsing library.
-- **`windwp/nvim-autopairs`**: This plugin automatically pairs brackets, quotes, and other characters.
-- **`lewis6991/gitsigns.nvim`**: This plugin provides git decorations in the sign column and stages hunks, among other features.
-- **`github/copilot.vim`**: This plugin integrates with GitHub's Copilot service to provide AI-powered code suggestions.
+## **Directory Structure & Configuration Files**
+
+The configuration files for the plugins and the core settings are organized as follows:
+
+- **`init.lua`**: Entry point for all plugins and configurations.
+- **Core Settings**:
+    - **`lua/pedro/core/colorscheme.lua`**: Defines the colorscheme for NeoVim.
+    - **`lua/pedro/core/keymaps.lua`**: Specifies keymaps for general operations and plugins.
+    - **`lua/pedro/core/options.lua`**: Configures various editor options, including line numbers, indentation, search settings, cursor line, appearance, backspace behavior, clipboard settings, and split windows behavior.
+- **Plugin Configuration Files**:
+    - **`lua/pedro/plugins/lualine.lua`**: Configures lualine for status line customization.
+    - **`lua/pedro/plugins/nvim-cmp.lua`**: Configures nvim-cmp for auto-completion and integrates luasnip for snippets and lspkind for language-specific icons.
+    - **`lua/pedro/plugins/nvim-tree.lua`**: Sets up and customizes nvim-tree for file navigation.
+    - **`lua/pedro/plugins/nvim-web-devicons.lua`**: Sets up and customizes nvim-web-devicons for sidebar file icons.
+    - **`lua/pedro/plugins/telescope.lua`**: Configures the Telescope plugin for fuzzy finding and picker navigation.
+    - **`lua/pedro/plugins/treesitter.lua`**: Sets up nvim-treesitter for syntax highlighting and specifies parser languages.
+    - **`lua/pedro/plugins/autopairs.lua`**: Sets up nvim-autopairs to automatically pair characters like brackets.
+    - **`lua/pedro/plugins/comment.lua`**: Sets up the Comment plugin for easy commenting/uncommenting of code lines.
+    - **`lua/pedro/plugins/copilot.lua`**: Configures the copilot.vim plugin for AI-powered code suggestions.
+    - **`lua/pedro/plugins/gitsigns.lua`**: Configures the gitsigns.nvim plugin, which shows Git diff markers.
+- **Language Server Protocol (LSP) Configuration Files**:
+    - **`lua/pedro/plugins/lsp/lspconfig.lua`**: Configures the lspconfig plugin for LSP support and the cmp-nvim-lsp for autocompletion. It also specifies LSP servers for specific languages.
+    - **`lua/pedro/plugins/lsp/lspsaga.lua`**: Configures the lspsaga plugin for a UI for LSP interactions.
+    - **`lua/pedro/plugins/lsp/mason.lua`**: Configures the mason plugin for managing language servers and linters. It also configures mason-lspconfig and mason-null-ls for interaction with lspconfig and null-ls respectively.
