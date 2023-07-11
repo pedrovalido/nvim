@@ -23,7 +23,7 @@ Key features include:
 Feel free to use this as a starting point for your configuration or as an inspiration to customize your current setup. Happy coding!
 
 <details>
-  <summary># Installation</summary>
+  <summary>Installation<h1></summary>
 
     Please follow these steps to install and setup this NeoVim configuration:
 
@@ -48,10 +48,10 @@ Feel free to use this as a starting point for your configuration or as an inspir
 
     Install plugins: Start NeoVim, the plugins specified in the configuration will be automatically installed by Lazy.nvim.
 
-<details>
+</details>
 
 <details>
-  <summary># Plugins</summary>
+  <summary>Plugins</summary>
 
     1. **Utility Plugins**: **`nvim-lua/plenary.nvim`** (provides utility functions for NeoVim development and configuration).
     2. **Themes & Colors**: **`bluz71/vim-nightfly-guicolors`**, **`ellisonleao/gruvbox.nvim`**, **`projekt0n/github-nvim-theme`** (color scheme plugins).
@@ -63,7 +63,7 @@ Feel free to use this as a starting point for your configuration or as an inspir
     8. **Syntax**: **`nvim-treesitter/nvim-treesitter`** (syntax highlighting and indentation based on Tree-sitter).
     9. **AI-powered Code Suggestions**: **`github/copilot.vim`** (integration with GitHub's Copilot service).
     
-<details>
+</details>
 
 
 
@@ -93,4 +93,4 @@ Feel free to use this as a starting point for your configuration or as an inspir
         - **`lua/pedro/plugins/lsp/lspsaga.lua`**: Configures the lspsaga plugin for a UI for LSP interactions.
         - **`lua/pedro/plugins/lsp/mason.lua`**: Configures the mason plugin for managing language servers and linters. It also configures mason-lspconfig and mason-null-ls for interaction with lspconfig and null-ls respectively.
 
-<details>
+</details>
