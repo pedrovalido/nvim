@@ -32,9 +32,9 @@ Feel free to use this as a starting point for your configuration or as an inspir
     Clone the repository: Clone this repository to your local machine using the following command in your terminal:
     for Unix-based systems
 
-    ```bash
+    <code>
     git clone https://github.com/pedrovalido/nvim ~/.config/nvim
-    ```
+    </code>
 
     for Windows systems
 
