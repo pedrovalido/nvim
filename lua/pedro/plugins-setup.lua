@@ -51,12 +51,6 @@ require("lazy").setup({
 		dependencies = { "kyazdani42/nvim-web-devicons" },
 	},
 
-	-- use({"vim-airline/vim-airline-themes"})
-	-- use {
-	--   "vim-airline/vim-airline",
-	--   dependencies = { "vim-airline/vim-airline-themes" }
-	-- }
-
 	--fuzzy finding
 	{ "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
 	{ "nvim-telescope/telescope.nvim", branch = "0.1.x" },
