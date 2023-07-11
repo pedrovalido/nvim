@@ -1,6 +1,7 @@
 # NeoVim
 
-:warning: Work in Progress: This configuration is still under active development and may undergo significant changes. While every effort is made to ensure stability, please be aware that bugs and breaking changes may occur.
+> :warning: Work in Progress: This configuration is still under active development and may undergo significant changes. While every effort is made to ensure stability, please be aware that bugs and breaking changes may occur.
+> 
 
 Welcome to my personal NeoVim configuration! This repository provides a modern, feature-rich development environment right in your terminal. Whether you're a seasoned developer or a beginner looking for a versatile text editor setup, this configuration has got you covered.
 
@@ -23,16 +24,23 @@ Feel free to use this as a starting point for your configuration or as an inspir
 
 Please follow these steps to install and setup this NeoVim configuration:
 
-Prerequisites: Ensure you have NeoVim installed on your system. If not, you can follow this guide<https://github.com/neovim/neovim/wiki/Installing-Neovim> to install it.
+Prerequisites: Ensure you have NeoVim installed on your system. If not, you can follow this [guide](https://github.com/neovim/neovim/wiki/Installing-Neovim) to install it.
 
 Clone the repository: Clone this repository to your local machine using the following command in your terminal:
 for Unix-based systems
+
+```bash
 git clone https://github.com/pedrovalido/nvim ~/.config/nvim
-for Windows system
+```
+
+for Windows systems
+
+```bash
 git clone https://github.com/pedrovalido/nvim ~/AppData/Local/nvim/
+```
 
 Install Lazy.nvim (the plugin manager): This configuration uses the Lazy.nvim plugin manager.
 If you don't have it installed, the configuration will automatically install it for you on the first run.
-If you wish to install it manually, follow the instructions in the Lazy.nvim repository<https://github.com/folke/lazy.nvim>.
+If you wish to install it manually, follow the instructions in the [Lazy.nvim repository](https://github.com/folke/lazy.nvim).
 
 Install plugins: Start NeoVim, the plugins specified in the configuration will be automatically installed by Lazy.nvim.
