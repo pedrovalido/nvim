@@ -54,7 +54,6 @@ Feel free to use this as a starting point for your configuration or as an inspir
 
 <details>
 
-
 # Plugins
 
 <details>
