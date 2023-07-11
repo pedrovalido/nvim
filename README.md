@@ -23,7 +23,7 @@ Key features include:
 Feel free to use this as a starting point for your configuration or as an inspiration to customize your current setup. Happy coding!
 
 <details>
-  <summary>Installation<h1></summary>
+  <summary><h1>Installation</h1>h1></summary>
 
     Please follow these steps to install and setup this NeoVim configuration:
 
@@ -51,7 +51,7 @@ Feel free to use this as a starting point for your configuration or as an inspir
 </details>
 
 <details>
-  <summary>Plugins</summary>
+  <summary><h1>Plugins</h1>h1></summary>
 
     1. **Utility Plugins**: **`nvim-lua/plenary.nvim`** (provides utility functions for NeoVim development and configuration).
     2. **Themes & Colors**: **`bluz71/vim-nightfly-guicolors`**, **`ellisonleao/gruvbox.nvim`**, **`projekt0n/github-nvim-theme`** (color scheme plugins).
@@ -68,7 +68,7 @@ Feel free to use this as a starting point for your configuration or as an inspir
 
 
 <details>
-  <summary># Directory Structure & Configuration Files</summary>
+  <summary><h1>Directory Structure & Configuration Files</h1></summary>
     
     The configuration files for the plugins and the core settings are organized as follows:
     
