@@ -19,8 +19,6 @@ Key features include:
 
 Feel free to use this as a starting point for your configuration or as an inspiration to customize your current setup. Happy coding!
 
-(Keep in mind this is a work in progress)
-
 # Installation
 
 Please follow these steps to install and setup this NeoVim configuration:
