@@ -57,4 +57,6 @@ vim.cmd([[imap <silent><script><expr> <C-a> copilot#Accept("\<CR>")]])
 -- vim.keymap.set.keymap("i", "<C-a>", ":copilot#Accept('\\<CR>')<CR>", { silent = true })
 
 --nvterm
-keymap.set("n", "<leader>t", "<cmd>lua require('nvterm.terminal').toggle 'float'<CR>")
+-- keymap.set("n", "<leader>t", "<cmd>lua require('nvterm.terminal').toggle 'float'<CR>")
+
+keymap.set("n", --[[ "t", ]] "<leader>t", "<cmd>Lspsaga term_toggle<CR>")
