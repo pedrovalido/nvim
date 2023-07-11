@@ -46,3 +46,28 @@ If you don't have it installed, the configuration will automatically install it 
 If you wish to install it manually, follow the instructions in the [Lazy.nvim repository](https://github.com/folke/lazy.nvim).
 
 Install plugins: Start NeoVim, the plugins specified in the configuration will be automatically installed by Lazy.nvim.
+
+# Detailed Plugin Documentation
+
+Here are the details of the plugins used in this NeoVim configuration:
+
+- **`nvim-lua/plenary.nvim`**: A plugin that provides utility functions and classes which can be useful in developing other plugins or configuring NeoVim.
+- **`bluz71/vim-nightfly-guicolors`** & **`ellisonleao/gruvbox.nvim`**: These plugins set the color scheme of your NeoVim editor.
+- **`projekt0n/github-nvim-theme`**: This is a color scheme that mirrors the default color theme of GitHub.
+- **`christoomey/vim-tmux-navigator`**: This plugin enables seamless navigation between tmux panels and vim split windows.
+- **`szw/vim-maximizer`**: Maximizer provides a command to maximize and restore the current window in Vim.
+- **`tpope/vim-surround`** & **`vim-scripts/ReplaceWithRegister`**: These plugins provide functionality to change, delete, and add 'surroundings' like parentheses, brackets, quotes, XML tags, etc. The latter allows you to replace a certain text with copied content.
+- **`numToStr/Comment.nvim`**: This plugin allows you to easily comment and uncomment lines of code using the **`gcc`** command.
+- **`nvim-tree/nvim-tree.lua`**: A file explorer plugin that provides an easy way to navigate between different files and directories.
+- **`kyazdani42/nvim-web-devicons`**: This plugin provides icons for different file types, which can be displayed in the status line or the file explorer.
+- **`nvim-lualine/lualine.nvim`**: This plugin provides a customizable status line.
+- **`nvim-telescope/telescope.nvim`**: A highly extensible fuzzy finder over lists that integrates with many other plugins and provides a smooth workflow for finding and replacing text, files, and much more.
+- **`hrsh7th/nvim-cmp`**: A powerful autocompletion plugin that integrates with other plugins to provide contextual suggestions while you're typing.
+- **`L3MON4D3/LuaSnip`** & **`rafamadriz/friendly-snippets`**: These plugins provide support for code snippets, which are templates of commonly-used code that you can insert into your file.
+- **`williamboman/mason.nvim`** & **`neovim/nvim-lspconfig`**: These plugins provide Language Server Protocol (LSP) support, making it easier to get features like autocompletion, go to definition, and syntax checking for your programming language of choice.
+- **`glepnir/lspsaga.nvim`**: An enhancement of the built-in LSP, providing many UI improvements.
+- **`jose-elias-alvarez/null-ls.nvim`**: This plugin allows NeoVim to use any program as a language server, allowing for things like formatting and linting.
+- **`nvim-treesitter/nvim-treesitter`**: This plugin provides syntax highlighting, indentation, and more, based on the Tree-sitter parsing library.
+- **`windwp/nvim-autopairs`**: This plugin automatically pairs brackets, quotes, and other characters.
+- **`lewis6991/gitsigns.nvim`**: This plugin provides git decorations in the sign column and stages hunks, among other features.
+- **`github/copilot.vim`**: This plugin integrates with GitHub's Copilot service to provide AI-powered code suggestions.
