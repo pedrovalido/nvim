@@ -102,4 +102,6 @@ require("lazy").setup({
 
 	--github copilot
 	"github/copilot.vim", -- uses OpenAI Codex to suggest code and entire functions in real-time
+
+	"folke/zen-mode.nvim", -- zen mode for nvim
 })
