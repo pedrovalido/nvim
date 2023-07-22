@@ -10,11 +10,7 @@ treesitter.setup({
 	-- A list of parser names, or "all" (the listed parsers should always be installed)
 	ensure_installed = {
 		"javascript",
-		-- "typescript",
 		"yaml",
-		-- "markdown",
-		-- "svelte",
-		-- "graphql",
 		"bash",
 		"lua",
 		"vim",
