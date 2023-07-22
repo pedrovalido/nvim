@@ -9,11 +9,10 @@ end
 treesitter.setup({
 	-- A list of parser names, or "all" (the listed parsers should always be installed)
 	ensure_installed = {
-		"json",
 		"javascript",
 		-- "typescript",
 		"yaml",
-		"markdown",
+		-- "markdown",
 		-- "svelte",
 		-- "graphql",
 		"bash",
@@ -22,9 +21,7 @@ treesitter.setup({
 		"rust",
 		"dockerfile",
 		"solidity",
-		"gitignore",
 		"c",
-		"vim",
 	},
 
 	-- Install parsers synchronously (only applied to `ensure_installed`)
