@@ -13,6 +13,7 @@ require("pedro.plugins.treesitter")
 require("pedro.plugins.gitsigns")
 require("pedro.plugins.copilot")
 require("pedro.plugins.zen-mode")
+require("pedro.plugins.catpuccin")
 
 -- plugin configs lsp
 require("pedro.plugins.lsp.mason")
