@@ -26,9 +26,9 @@ require("lazy").setup({
 	"ellisonleao/gruvbox.nvim",
 	{ "catppuccin/nvim", name = "catppuccin", priority = 1000 },
 
-	-- Install without configuration
 	"projekt0n/github-nvim-theme",
 
+	-- Install without configuration
 	"christoomey/vim-tmux-navigator", --tmux && split window navigation
 
 	"szw/vim-maximizer", --maximizes and restores current window
