@@ -56,8 +56,6 @@ require("lazy").setup({
 	{ "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
 	{ "nvim-telescope/telescope.nvim", branch = "0.1.x" },
 
-	-- "NvChad/nvterm", -- terminal (replaced with lsp saga terminal for now)
-
 	-- autocompletion
 	"hrsh7th/nvim-cmp", -- completion plugin
 	"hrsh7th/cmp-buffer", -- source for text in buffer
@@ -75,12 +73,9 @@ require("lazy").setup({
 	-- configuring lsp servers, linters and formatters
 	"neovim/nvim-lspconfig", -- easily configure language servers
 	"hrsh7th/cmp-nvim-lsp", -- for autocompletion
-	{ "glepnir/lspsaga.nvim", branch = "main" }, -- enhanced lsp uis("jose-elias-alvarez/typescript.nvim"), -- additional functionality for typescript server (e.g. rename file & update imports)
+	{ "glepnir/lspsaga.nvim", branch = "main" }, -- enhanced lsp uis
+	"jose-elias-alvarez/typescript.nvim", -- additional functionality for typescript server (e.g. rename file & update imports)
 	"onsails/lspkind.nvim", -- vs-code like icons for autocompletion
-
-	-- helm plugins
-	-- use("towolf/vim-helm") -- helm integration
-	-- use("mrjosh/helm-ls")
 
 	-- formatting & linting
 	"jose-elias-alvarez/null-ls.nvim", -- configure formatters & linters
@@ -89,12 +84,10 @@ require("lazy").setup({
 	-- treesitter configuration
 	{
 		"nvim-treesitter/nvim-treesitter",
-		-- build = function()
-		-- 	require("nvim-treesitter.install").update({ with_sync = true })
-		-- end,
 		build = ":TSUpdate",
 		dependencies = "windwp/nvim-ts-autotag", -- autoclose parens, brackets, quotes, etc...
 	},
+
 	-- auto closing
 	"windwp/nvim-autopairs",
 
