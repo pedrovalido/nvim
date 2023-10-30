@@ -18,6 +18,7 @@ treesitter.setup({
 		"dockerfile",
 		"solidity",
 		"c",
+		"python",
 	},
 
 	-- Install parsers synchronously (only applied to `ensure_installed`)
