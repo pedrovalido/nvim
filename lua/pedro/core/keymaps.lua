@@ -56,6 +56,6 @@ vim.cmd([[imap <silent><script><expr> <C-a> copilot#Accept("\<CR>")]])
 -- vim.g.copilot_no_tab_map = true
 -- vim.keymap.set.keymap("i", "<C-a>", ":copilot#Accept('\\<CR>')<CR>", { silent = true })
 
-keymap.set("n", --[[ "t", ]] "<leader>t", "<cmd>Lspsaga term_toggle<CR>") -- toggle floating terminal
+keymap.set("n", "<leader>t", "<cmd>Lspsaga term_toggle<CR>") -- toggle floating terminal
 
 keymap.set("n", "<leader>z", ":ZenMode<CR>") -- toggle zen mode
