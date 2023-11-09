@@ -34,6 +34,8 @@ keymap.set("n", "<C-u>", "<C-u>zz") -- keep cursor in the middle of the page whi
 keymap.set("n", "n", "nzzzv") -- keep searched terms in the middle
 keymap.set("n", "N", "Nzzzv") -- keep searched terms in the middle
 
+keymap.set("n", "§", "$") -- go to end of line
+
 --plugin keymaps
 
 --vim maximizer
