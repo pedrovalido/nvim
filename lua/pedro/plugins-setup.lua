@@ -25,6 +25,7 @@ require("lazy").setup({
 	"bluz71/vim-nightfly-guicolors", --preferred coloscheme
 	"ellisonleao/gruvbox.nvim",
 	{ "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+	"navarasu/onedark.nvim",
 
 	"projekt0n/github-nvim-theme",
 
