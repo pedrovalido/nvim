@@ -35,6 +35,7 @@ keymap.set("n", "n", "nzzzv") -- keep searched terms in the middle
 keymap.set("n", "N", "Nzzzv") -- keep searched terms in the middle
 
 keymap.set("n", "§", "$") -- go to end of line
+keymap.set("v", "§", "$") -- go to end of line
 
 --plugin keymaps
 
