@@ -81,6 +81,7 @@ require("lazy").setup({
 	-- formatting & linting
 	"jose-elias-alvarez/null-ls.nvim", -- configure formatters & linters
 	"jayp0521/mason-null-ls.nvim", -- bridges gap b/w mason & null-ls
+	"vyperlang/vim-vyper", -- vyper syntax HLer
 
 	-- treesitter configuration
 	{
