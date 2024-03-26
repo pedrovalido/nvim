@@ -9,7 +9,7 @@ local keymap = vim.keymap -- for conciseness
 keymap.set("i", "jk", "<ESC>") --get out of insert mode with jk
 keymap.set("i", "JK", "<ESC>") --get out of insert mode with JK
 
-keymap.set("n", "<leader>nh", ":nohl<CR>") --clear search highlights
+keymap.set("n", "<leader>nh", ":nohl<CR>", { silent = true }) --clear search highlights
 
 keymap.set("n", "x", '"_x') --delete character with x but dont copy to clipboard
 
