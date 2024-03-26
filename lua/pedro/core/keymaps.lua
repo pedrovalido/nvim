@@ -36,6 +36,7 @@ keymap.set("n", "N", "Nzzzv") -- keep searched terms in the middle
 
 keymap.set("n", "§", "$") -- go to end of line
 keymap.set("v", "§", "$") -- go to end of line
+keymap.set("i", "§", "<Esc>A", { noremap = true, silent = true }) -- go to end of line in insert mode
 
 --plugin keymaps
 
