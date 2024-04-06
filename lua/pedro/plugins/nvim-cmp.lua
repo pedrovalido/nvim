@@ -17,7 +17,11 @@ if not lspkind_status then
 end
 
 -- load vs-code like snippets from plugins (e.g. friendly-snippets)
-require("luasnip/loaders/from_vscode").lazy_load()
+local loader_from_vs_code_status, loader_from_vs_code = pcall(require, "luasnip/loaders/from_vscode")
+if not loader_from_vs_code_status then
+	return
+end
+loader_from_vs_code.lazy_load()
 
 vim.opt.completeopt = "menu,menuone,noselect"
 
