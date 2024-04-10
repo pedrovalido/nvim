@@ -38,7 +38,6 @@ mason_lspconfig.setup({
 		-- "solang", --solidity (there are others)
 		"solidity_ls_nomicfoundation", --solidity (there are others)
 		-- "yamlls", --yaml
-		"markdown_oxide", --markdown
 		"pyright", --python
 	},
 	-- auto-install configured servers (with lspconfig)
