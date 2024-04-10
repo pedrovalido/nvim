@@ -16,14 +16,12 @@ if not lspkind_status then
 	return
 end
 
--- load vs-code like snippets from plugins (e.g. friendly-snippets)
-local loader_from_vs_code_status, loader_from_vs_code = pcall(require, "luasnip/loaders/from_vscode")
+-- load vs-code like snippets from installed plugins (e.g. friendly-snippets)
+local loader_from_vs_code_status, loader_from_vs_code = pcall(require, "luasnip.loaders.from_vscode")
 if not loader_from_vs_code_status then
 	return
 end
 loader_from_vs_code.lazy_load()
-
-vim.opt.completeopt = "menu,menuone,noselect"
 
 -- helper function for super tab functionality (not in youtube nvim video)
 local has_words_before = function()
@@ -31,7 +29,29 @@ local has_words_before = function()
 	return col ~= 0 and vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1]:sub(col, col):match("%s") == nil
 end
 
+-- Use buffer source for `/` and `?` (if you enabled `native_menu`, this won't work anymore).
+cmp.setup.cmdline({ "/", "?" }, {
+	mapping = cmp.mapping.preset.cmdline(),
+	sources = {
+		{ name = "buffer" },
+	},
+})
+
+-- Use cmdline & path source for ':' (if you enabled `native_menu`, this won't work anymore).
+cmp.setup.cmdline(":", {
+	mapping = cmp.mapping.preset.cmdline(),
+	sources = cmp.config.sources({
+		{ name = "path" },
+	}, {
+		{ name = "cmdline" },
+	}),
+	matching = { disallow_symbol_nonprefix_matching = false },
+})
+
 cmp.setup({
+	completion = {
+		completeopt = "menu,menuone,noinsert",
+	},
 	snippet = {
 		expand = function(args)
 			luasnip.lsp_expand(args.body)
