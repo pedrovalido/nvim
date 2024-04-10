@@ -4,6 +4,7 @@ require("pedro.plugins-setup")
 -- plugins configs
 require("pedro.plugins.nvim-web-devicons")
 require("pedro.plugins.comment")
+require("pedro.plugins.todo-comments")
 require("pedro.plugins.nvim-tree")
 require("pedro.plugins.lualine")
 require("pedro.plugins.telescope")
