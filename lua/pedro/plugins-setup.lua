@@ -34,15 +34,32 @@ require("lazy").setup({
 
 	"szw/vim-maximizer", --maximizes and restores current window
 
+	--shows keymaps in a popup
+	{
+		"folke/which-key.nvim",
+		--- allow plugin to load lazily
+		event = "VeryLazy",
+		init = function()
+			vim.o.timeout = true
+			vim.o.timeoutlen = 500
+		end,
+	},
+
 	--replace words faster
 	"tpope/vim-surround", -- fetch words between chars faster
 	"vim-scripts/ReplaceWithRegister", --replace a certain text with copied content
 
 	--comment with gcc
-	"numToStr/Comment.nvim",
+	{ "numToStr/Comment.nvim", event = { "BufReadPre", "BufNewFile" } },
 
-	--file explorer duhh
+	--todo comments
+	{ "folke/todo-comments.nvim", event = { "BufReadPre", "BufNewFile" }, dependencies = "nvim-lua/plenary.nvim" },
+
+	--file explorer
 	"nvim-tree/nvim-tree.lua",
+
+	-- edit files in explorer in a pretty way
+	{ "stevearc/dressing.nvim", event = "VeryLazy" },
 
 	--icons
 	"kyazdani42/nvim-web-devicons",
@@ -53,26 +70,50 @@ require("lazy").setup({
 		dependencies = { "kyazdani42/nvim-web-devicons" },
 	},
 
+	--bufferline
+	{
+		"akinsho/nvim-bufferline.lua",
+		dependencies = "nvim-tree/nvim-web-devicons",
+		version = "*",
+		opts = {
+			options = {
+				mode = "tabs",
+				separator_style = "slant",
+			},
+		},
+	},
+
 	--fuzzy finding
-	{ "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
-	{ "nvim-telescope/telescope.nvim", branch = "0.1.x" },
+	{
+		"nvim-telescope/telescope.nvim",
+		branch = "0.1.x",
+		dependencies = {
+			"nvim-lua/plenary.nvim",
+			{ "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
+			"nvim-tree/nvim-web-devicons",
+			"folke/todo-comments.nvim",
+		},
+	},
 
 	-- autocompletion
-	"hrsh7th/nvim-cmp", -- completion plugin
-	"hrsh7th/cmp-buffer", -- source for text in buffer
-	"hrsh7th/cmp-path", -- source for file system paths
-
-	-- snippets
-	-- snippet engine
 	{
-		"L3MON4D3/LuaSnip",
-		-- follow latest release.
-		version = "v2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
-		-- install jsregexp (optional!).
-		build = "make install_jsregexp",
+		"hrsh7th/nvim-cmp",
+		event = "InsertEnter",
+		dependencies = {
+			"hrsh7th/cmp-buffer", -- source for text in buffer
+			"hrsh7th/cmp-path", -- source for file system paths
+			{
+				"L3MON4D3/LuaSnip",
+				-- follow latest release.
+				version = "v2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
+				-- install jsregexp (optional!).
+				build = "make install_jsregexp",
+			},
+			"saadparwaiz1/cmp_luasnip", -- for autocompletion
+			"rafamadriz/friendly-snippets", -- useful snippets
+			"onsails/lspkind-nvim", --vs-code like pictograms
+		},
 	},
-	"saadparwaiz1/cmp_luasnip", -- for autocompletion
-	"rafamadriz/friendly-snippets", -- useful snippets
 
 	-- managing & installing lsp servers, linters & formatters
 	"williamboman/mason.nvim", -- in charge of managing lsp servers, linters & formatters
@@ -93,12 +134,13 @@ require("lazy").setup({
 	-- treesitter configuration
 	{
 		"nvim-treesitter/nvim-treesitter",
+		event = { "BufReadPre", "BufNewFile" },
 		build = ":TSUpdate",
 		dependencies = "windwp/nvim-ts-autotag", -- autoclose parens, brackets, quotes, etc...
 	},
 
 	-- auto closing
-	"windwp/nvim-autopairs",
+	{ "windwp/nvim-autopairs", event = "InsertEnter", dependencies = "hrsh7th/nvim-cmp" },
 
 	-- git integration
 	"lewis6991/gitsigns.nvim", -- show line modifications on left hand side
