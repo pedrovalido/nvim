@@ -116,8 +116,12 @@ require("lazy").setup({
 	},
 
 	-- managing & installing lsp servers, linters & formatters
-	"williamboman/mason.nvim", -- in charge of managing lsp servers, linters & formatters
-	"williamboman/mason-lspconfig.nvim", -- bridges gap b/w mason & lspconfig
+	{
+		"williamboman/mason.nvim", -- in charge of managing lsp servers, linters & formatters
+		dependencies = {
+			"williamboman/mason-lspconfig.nvim", -- bridges gap b/w mason & lspconfig
+		},
+	},
 
 	-- configuring lsp servers, linters and formatters
 	"neovim/nvim-lspconfig", -- easily configure language servers
