@@ -58,7 +58,7 @@ require("lazy").setup({
 	--file explorer
 	"nvim-tree/nvim-tree.lua",
 
-	-- edit files in explorer in a pretty way
+	-- edit something in a pretty way (edit files in explorer, there is more)
 	{ "stevearc/dressing.nvim", event = "VeryLazy" },
 
 	--icons
