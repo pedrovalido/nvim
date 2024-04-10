@@ -30,7 +30,7 @@ mason_lspconfig.setup({
 		"tsserver",
 		"html",
 		"cssls",
-		"tailwindcss",
+		-- "tailwindcss",
 		"lua_ls", --lua
 		"bashls", --bash
 		"jsonls", --json
@@ -38,6 +38,8 @@ mason_lspconfig.setup({
 		-- "solang", --solidity (there are others)
 		"solidity_ls_nomicfoundation", --solidity (there are others)
 		-- "yamlls", --yaml
+		"markdown_oxide", --markdown
+		"pyright", --python
 	},
 	-- auto-install configured servers (with lspconfig)
 	-- automatic_installation = true, -- not the same as ensure_installed
