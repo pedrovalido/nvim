@@ -92,3 +92,6 @@ vim.cmd([[imap <silent><script><expr> <C-a> copilot#Accept("\<CR>")]])
 -- keymap.set("n", "<leader>t", "<cmd>Lspsaga term_toggle<CR>") -- toggle floating terminal
 
 keymap.set("n", "<leader>z", ":ZenMode<CR>", { desc = "toggle zen mode" })
+
+-- format command
+keymap.set({"n", "v"}, "<leader>qf", vim.lsp.buf.format, { remap = false })
