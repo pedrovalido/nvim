@@ -62,12 +62,12 @@ require("lazy").setup({
 	{ "stevearc/dressing.nvim", event = "VeryLazy" },
 
 	--icons
-	"kyazdani42/nvim-web-devicons",
+	"nvim-tree/nvim-web-devicons",
 
 	--status line
 	{
 		"nvim-lualine/lualine.nvim",
-		dependencies = { "kyazdani42/nvim-web-devicons" },
+		dependencies = { "nvim-tree/nvim-web-devicons" },
 	},
 
 	--bufferline

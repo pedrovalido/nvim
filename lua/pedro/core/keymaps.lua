@@ -80,7 +80,7 @@ keymap.set(
 	{ desc = "find file in all files including hidden files" }
 )
 keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>", { desc = "list open buffers in current neovim instance" })
--- keymap.set("n", "<leader>ft", "<cmd>Telescope colorscheme<cr>") -- list available colorschemes
+keymap.set("n", "<leader>fte", "<cmd>Telescope colorscheme<cr>") -- list available colorschemes
 keymap.set("n", "<leader>ft", "<cmd>TodoTelescope<cr>", { desc = "Find TODOs" })
 keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>", { desc = "list available help tags" })
 
@@ -94,4 +94,4 @@ vim.cmd([[imap <silent><script><expr> <C-a> copilot#Accept("\<CR>")]])
 keymap.set("n", "<leader>z", ":ZenMode<CR>", { desc = "toggle zen mode" })
 
 -- format command
-keymap.set({"n", "v"}, "<leader>qf", vim.lsp.buf.format, { remap = false })
+keymap.set({ "n", "v" }, "<leader>qf", vim.lsp.buf.format, { remap = false })

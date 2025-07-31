@@ -64,7 +64,7 @@ cmp.setup({
 		["<C-f>"] = cmp.mapping.scroll_docs(4),
 		["<C-Space>"] = cmp.mapping.complete(), -- show completion suggestions
 		["<C-e>"] = cmp.mapping.abort(), -- close completion window
-		-- ["<S-CR>"] = cmp.mapping.confirm({ select = false }), --shift enter to accept. Not necessary tabing through suggestion will start write the suggestion
+		["<S-CR>"] = cmp.mapping.confirm({ select = false }), --shift enter to accept. Not necessary tabing through suggestion will start write the suggestion
 
 		-- super tab functionality (not in youtube nvim video)
 		["<Tab>"] = cmp.mapping(function(fallback) -- use tab for next suggestion
