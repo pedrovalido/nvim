@@ -30,7 +30,16 @@ require("lazy").setup({
 	"projekt0n/github-nvim-theme",
 
 	-- Install without configuration
-	"christoomey/vim-tmux-navigator", --tmux && split window navigation
+	{
+		"christoomey/vim-tmux-navigator", -- tmux fallback plus Herdr/split navigation
+		lazy = false,
+		init = function()
+			vim.g.tmux_navigator_no_mappings = 1
+		end,
+		config = function()
+			dofile(vim.fn.expand("~/.local/share/herdr/plugins/vim-herdr-navigation/editor/nvim.lua"))
+		end,
+	},
 
 	"szw/vim-maximizer", --maximizes and restores current window
 
@@ -111,7 +120,7 @@ require("lazy").setup({
 			},
 			"saadparwaiz1/cmp_luasnip", -- for autocompletion
 			"rafamadriz/friendly-snippets", -- useful snippets
-			"onsails/lspkind-nvim", --vs-code like pictograms
+			"onsails/lspkind.nvim", --vs-code like pictograms
 		},
 	},
 
@@ -130,15 +139,21 @@ require("lazy").setup({
 		dependencies = {
 			"hrsh7th/cmp-nvim-lsp", -- for autocompletion
 			{ "antosha417/nvim-lsp-file-operations", config = true },
-			{ "folke/neodev.nvim", opts = {} },
+			{ "folke/lazydev.nvim", ft = "lua", opts = {} },
 		},
 	},
 	{ "glepnir/lspsaga.nvim", branch = "main" }, -- enhanced lsp uis
-	"jose-elias-alvarez/typescript.nvim", -- additional functionality for typescript server (e.g. rename file & update imports)
+	{
+		"pmizio/typescript-tools.nvim", -- TypeScript LSP plus rename/import helpers
+		dependencies = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
+	},
 	"onsails/lspkind.nvim", -- vs-code like icons for autocompletion
 
 	-- formatting & linting
-	"jose-elias-alvarez/null-ls.nvim", -- configure formatters & linters
+	{
+		"nvimtools/none-ls.nvim", -- configure formatters & linters
+		dependencies = "nvimtools/none-ls-extras.nvim",
+	},
 	"jayp0521/mason-null-ls.nvim", -- bridges gap b/w mason & null-ls
 	"vyperlang/vim-vyper", -- vyper syntax HLer
 

@@ -16,18 +16,13 @@ end
 -- 	return
 -- end
 
-local lspconfig_status, lspconfig = pcall(require, "lspconfig")
-if not lspconfig_status then
-	return
-end
-
 -- enable mason
 mason.setup()
 
 mason_lspconfig.setup({
 	-- list of servers for mason to install
 	ensure_installed = {
-		"tsserver",
+		"ts_ls",
 		"html",
 		"cssls",
 		-- "tailwindcss",
@@ -36,21 +31,22 @@ mason_lspconfig.setup({
 		"jsonls", --json
 		"jedi_language_server", --python
 		-- "solang", --solidity (there are others)
-		"solidity_ls_nomicfoundation", --solidity (there are others)
+		"solidity", --solidity (there are others)
 		-- "yamlls", --yaml
 		"pyright", --python
 	},
+	automatic_enable = false,
 	-- auto-install configured servers (with lspconfig)
 	-- automatic_installation = true, -- not the same as ensure_installed
 })
 
-lspconfig.solidity_ls_nomicfoundation.setup({
-	cmd = { "nomicfoundation-solidity-language-server", "--stdio" },
-	filetypes = { "solidity" },
-	-- root_dir = lspconfig.util.find_git_ancestor,
-	require("lspconfig.util").root_pattern("foundry.toml"),
-	single_file_support = true,
-})
+-- lspconfig.solidity_ls_nomicfoundation.setup({
+-- 	cmd = { "nomicfoundation-solidity-language-server", "--stdio" },
+-- 	filetypes = { "solidity" },
+-- 	-- root_dir = lspconfig.util.find_git_ancestor,
+-- 	require("lspconfig.util").root_pattern("foundry.toml"),
+-- 	single_file_support = true,
+-- })
 
 -- mason_null_ls.setup({
 -- 	-- list of formatters & linters for mason to install
